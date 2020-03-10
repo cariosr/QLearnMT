@@ -30,7 +30,7 @@ if [ -z "$3" ]; then
 fi
 
 URL="https://wit3.fbk.eu/archive/2015-01/texts/${src}/${tgt}/${lang}.tgz"
-prep="../test/data/iwslt15/${lang}"
+prep="./test/data/iwslt15/${lang}"
 tmp=${prep}/tmp
 GZ=${lang}.tgz
 orig=orig
