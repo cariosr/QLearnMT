@@ -33,7 +33,7 @@ training:
     validation_freq: 2000
     logging_freq: 500
     eval_metric: "bleu"
-    model_dir: "models/iwslt15_deen_bpe"
+    model_dir: "/content/gdrive/My Drive/models/iwslt15_deen_bpe"
     overwrite: False
     shuffle: True
     use_cuda: True
