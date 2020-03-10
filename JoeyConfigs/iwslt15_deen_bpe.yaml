@@ -34,7 +34,7 @@ training:
     logging_freq: 500
     eval_metric: "bleu"
     model_dir: "/content/gdrive/My Drive/models/iwslt15_deen_bpe"
-    overwrite: False
+    overwrite: True
     shuffle: True
     use_cuda: True
     max_output_length: 80
