@@ -36,6 +36,8 @@ GZ=${lang}.tgz
 orig=orig
 
 mkdir -p ${orig} ${tmp} ${prep}
+echo "${orig} ${tmp} ${prep} created"
+
 
 echo "Downloading data from ${URL}..."
 cd ${orig}
