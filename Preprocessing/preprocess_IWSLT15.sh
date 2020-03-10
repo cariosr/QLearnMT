@@ -16,6 +16,13 @@ merge_ops=32000
 src=$1
 tgt=$2
 lang=$3
+if [ -z "$1" ]; then
+    echo "Missing source language argument. Script has three arguments: src tgt src-tgt."
+if [ -z "$2" ]; then
+    echo "Missing target language argument. Script has three arguments: src tgt src-tgt."
+if [ -z "$3" ]; then
+    echo "Missing language pair argument. Script has three arguments: src tgt src-tgt."
+
 URL="https://wit3.fbk.eu/archive/2015-01/texts/${src}/${tgt}/${lang}.tgz"
 prep="../test/data/iwslt15/${lang}"
 tmp=${prep}/tmp
@@ -107,3 +114,5 @@ done
 mv "${codes_file}" "${prep}/"
 rm -rf ${MOSES}
 rm -rf ${tmp}
+
+echo "Done pre-processing small corpus."
