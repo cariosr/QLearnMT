@@ -3,9 +3,9 @@ name: "iwslt15-deen-bpe"
 data:
     src: "de"
     trg: "en"
-    train: "../test/data/iwslt15/de-en/train.bpe.32000"
-    dev: "../test/data/iwslt15/de-en/valid.bpe.32000" 
-    test: "../test/data/iwslt15/de-en/test.bpe.32000"
+    train: "/content/QLearnMT/test/data/iwslt15/de-en/train.bpe.32000"
+    dev: "/content/QLearnMT/test/data/iwslt15/de-en/valid.bpe.32000" 
+    test: "/content/QLearnMT/test/data/iwslt15/de-en/test.bpe.32000"
     level: "bpe"
     lowercase: True
     max_sent_length: 62
