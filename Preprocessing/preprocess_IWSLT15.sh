@@ -94,7 +94,7 @@ for l in ${src} ${tgt}; do
     awk '{if (NR%23 != 0)  print $0; }' ${tmp}/train.tags.${lang}.${l} > ${tmp}/train.${l}
     
     cat ${tmp}/*.dev*.${lang}.${l} \
-        ${tmp}/*.tst*.${lang}.${l} 
+        ${tmp}/*.tst*.${lang}.${l} \
         > ${tmp}/test.${l}
 done
 
