@@ -3,9 +3,9 @@ name: "iwslt15-deen-bpe"
 data:
     src: "de"
     trg: "en"
-    train: "../test/data/iwslt15/de-en/train.bpe.32000"
-    dev: "../test/data/iwslt15/de-en/valid.bpe.32000" 
-    test: "../test/data/iwslt15/de-en/test.bpe.32000"
+    train: "/content/test/data/iwslt15/de-en/train.bpe.32000"
+    dev: "/content/test/data/iwslt15/de-en/valid.bpe.32000" 
+    test: "/content/test/data/iwslt15/de-en/test.bpe.32000"
     level: "bpe"
     lowercase: True
     max_sent_length: 62
@@ -33,8 +33,8 @@ training:
     validation_freq: 2000
     logging_freq: 500
     eval_metric: "bleu"
-    model_dir: "models/iwslt15_deen_bpe"
-    overwrite: False
+    model_dir: "/content/gdrive/My Drive/models/iwslt15_deen_bpe"
+    overwrite: True
     shuffle: True
     use_cuda: True
     max_output_length: 80
